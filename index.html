@@ -129,6 +129,7 @@
                 <li>Discuss games and connect with others.</li>
                 <li>Post questions for support.</li>
                 <li>Share feedback and suggestions.</li>
+                <button onclick="addPost()">Add Post</button>
             </ul>
         </div>
         <div class="section" id="moderation">
@@ -162,15 +163,26 @@
         <p>Configure browser push notifications for updates.</p>
     </div>
     <script>
-        // Basic interactivity for smooth scrolling
-        document.querySelectorAll('.nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+        // Dynamic stats
+        function updateStats() {
+            const stats = document.querySelectorAll('.stats p');
+            stats.forEach(p => p.textContent = Math.floor(Math.random() * 1000));
+        }
+        setInterval(updateStats, 5000);
+
+        // Simple forum post function
+        let posts = [];
+        function addPost() {
+            const content = prompt('Enter post content:');
+            if (content) {
+                posts.push({ id: Date.now(), content });
+                renderPosts();
+            }
+        }
+        function renderPosts() {
+            const forum = document.querySelector('#community ul');
+            forum.innerHTML = posts.map(p => `<li>${p.content} <button onclick="posts = posts.filter(x => x.id !== ${p.id}); renderPosts();">Delete</button></li>`).join('');
+        }
     </script>
 </body>
 </html>
