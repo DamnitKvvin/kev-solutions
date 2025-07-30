@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kev Solutions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .header {
+            background: linear-gradient(135deg, #2e2e2e, #1a1a1a);
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        .nav a:hover {
+            color: #00b7ff;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://via.placeholder.com/1500x600') no-repeat center/cover;
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #00b7ff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #008acc;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            background: #2e2e2e;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #222;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .stats h4 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .stats p {
+            margin: 5px 0;
+            color: #00b7ff;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Kev Solutions</h1>
+    </div>
+    <div class="nav">
+        <a href="#news">News</a>
+        <a href="#community">Community</a>
+        <a href="#moderation">Moderation</a>
+    </div>
+    <div class="hero">
+        <h2>A better way to browse. Learn more.</h2>
+        <button onclick="alert('Install instructions: Follow browser-specific steps for iOS/Android.')">Add to Home Screen</button>
+    </div>
+    <div class="content">
+        <div class="section" id="news">
+            <h3>News & Information</h3>
+            <ul>
+                <li>Stay updated with the latest news and updates!</li>
+                <li>Community guidelines and rules.</li>
+                <li>Recent game updates and features.</li>
+            </ul>
+        </div>
+        <div class="section" id="community">
+            <h3>Community</h3>
+            <ul>
+                <li>Discuss games and connect with others.</li>
+                <li>Post questions for support.</li>
+                <li>Share feedback and suggestions.</li>
+            </ul>
+        </div>
+        <div class="section" id="moderation">
+            <h3>Moderation</h3>
+            <ul>
+                <li>Apply to become a moderator.</li>
+                <li>Appeal bans or warnings.</li>
+                <li>Report rule violations.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="stats">
+        <div>
+            <h4>0</h4>
+            <p>Visits</p>
+        </div>
+        <div>
+            <h4>0</h4>
+            <p>Active Users</p>
+        </div>
+        <div>
+            <h4>0</h4>
+            <p>Discord Users</p>
+        </div>
+        <div>
+            <h4>0</h4>
+            <p>Roblox Group Members</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Configure browser push notifications for updates.</p>
+    </div>
+    <script>
+        // Basic interactivity for smooth scrolling
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
