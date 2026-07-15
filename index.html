@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kev Solutions™ - Roblox Experiences</title>
+    <title>Kev Solutions™</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-        body { font-family: 'Inter', system-ui, sans-serif; }
-        .hero-bg { background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://picsum.photos/id/1015/1920/1080') center/cover; }
-        .card-hover { transition: all 0.3s; }
-        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <!-- Navbar -->
+    <!-- Navbar (same as before, with updated links) -->
     <nav class="fixed top-0 w-full bg-zinc-900/90 backdrop-blur-md z-50 border-b border-zinc-800">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -23,155 +18,43 @@
                 <span class="text-2xl font-bold tracking-tight">Kev Solutions™</span>
             </div>
             <div class="flex gap-8 text-sm font-medium">
-                <a href="#experiences" class="hover:text-emerald-400 transition">Experiences</a>
-                <a href="#assets" class="hover:text-emerald-400 transition">Assets</a>
-                <a href="#community" class="hover:text-emerald-400 transition">Community</a>
-                <a href="#about" class="hover:text-emerald-400 transition">About</a>
+                <a href="experiences.html" class="hover:text-emerald-400 transition">Experiences</a>
+                <a href="assets.html" class="hover:text-emerald-400 transition">Assets</a>
+                <a href="blog/index.html" class="hover:text-emerald-400 transition">Blog</a>
+                <a href="about.html" class="hover:text-emerald-400 transition">About</a>
+                <a href="contact.html" class="hover:text-emerald-400 transition">Contact</a>
             </div>
-            <a href="https://discord.gg/your-discord" target="_blank" 
+            <a href="https://discord.gg/JjgafXXqaW" target="_blank" 
                class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 rounded-full font-semibold transition flex items-center gap-2">
                 <i class="fab fa-discord"></i> Join Discord
             </a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero-bg min-h-screen flex items-center pt-20">
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20" style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('images/hero.jpg') center/cover;">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h1 class="text-7xl font-bold tracking-tighter mb-6">Immersive Roblox Experiences</h1>
-            <p class="text-2xl text-zinc-300 max-w-2xl mx-auto mb-10">High-quality roleplay, simulation, and original games built with passion.</p>
+            <p class="text-2xl text-zinc-300 max-w-2xl mx-auto mb-10">High-quality roleplay, simulation & original games by Kev Solutions.</p>
             
             <div class="flex justify-center gap-6 mb-16">
-                <a href="#play" class="px-10 py-4 bg-white text-black font-semibold rounded-2xl hover:scale-105 transition text-lg flex items-center gap-3">
-                    <i class="fas fa-play"></i> Play Now
-                </a>
-                <a href="https://www.roblox.com/groups/your-group-id" target="_blank" 
-                   class="px-10 py-4 border border-white/50 hover:bg-white/10 font-semibold rounded-2xl transition text-lg">
-                    Join Group
-                </a>
+                <a href="experiences.html" class="px-10 py-4 bg-white text-black font-semibold rounded-2xl hover:scale-105 transition text-lg">Browse Experiences</a>
+                <a href="https://www.roblox.com/communities/15286947/Kev-Solutions" target="_blank" class="px-10 py-4 border border-white/50 hover:bg-white/10 font-semibold rounded-2xl transition text-lg">Join Group</a>
             </div>
 
-            <div class="grid grid-cols-4 gap-8 max-w-2xl mx-auto text-center">
-                <div>
-                    <div class="text-4xl font-bold text-emerald-400">1M+</div>
-                    <div class="text-zinc-400 text-sm">Total Visits</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold text-emerald-400">50K+</div>
-                    <div class="text-zinc-400 text-sm">Group Members</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold text-emerald-400">15+</div>
-                    <div class="text-zinc-400 text-sm">Experiences</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold text-emerald-400">99.9%</div>
-                    <div class="text-zinc-400 text-sm">Uptime</div>
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto text-center">
+                <div><div class="text-4xl font-bold text-emerald-400">1M+</div><div class="text-zinc-400 text-sm">Visits</div></div>
+                <div><div class="text-4xl font-bold text-emerald-400">50K+</div><div class="text-zinc-400 text-sm">Members</div></div>
+                <div><div class="text-4xl font-bold text-emerald-400">10+</div><div class="text-zinc-400 text-sm">Experiences</div></div>
+                <div><div class="text-4xl font-bold text-emerald-400">99.9%</div><div class="text-zinc-400 text-sm">Uptime</div></div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Experiences -->
-    <section id="experiences" class="py-24 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-4">Featured Experiences</h2>
-            <p class="text-center text-zinc-400 mb-16">High-fidelity Roblox games built for immersion and fun</p>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Example Game Card -->
-                <div class="bg-zinc-800 rounded-3xl overflow-hidden card-hover">
-                    <img src="https://picsum.photos/id/1015/600/400" class="w-full h-56 object-cover" alt="Whatcom County">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-semibold mb-2">Whatcom County, Washington</h3>
-                        <p class="text-zinc-400 mb-6">Realistic rural-to-urban roleplay experience inspired by Washington state.</p>
-                        <a href="https://www.roblox.com/your-game-link" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium">
-                            Play on Roblox →
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Add more cards here as needed -->
-                <div class="bg-zinc-800 rounded-3xl overflow-hidden card-hover">
-                    <img src="https://picsum.photos/id/237/600/400" class="w-full h-56 object-cover" alt="Game 2">
-                    <div class="p-8">
-                        <h3 class="text-2xl font-semibold mb-2">Your Next Experience</h3>
-                        <p class="text-zinc-400 mb-6">Description coming soon...</p>
-                        <a href="#" class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-medium">
-                            Coming Soon
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Assets / Marketplace -->
-    <section id="assets" class="py-24">
-        <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-5xl font-bold text-center mb-4">Premium Assets</h2>
-            <p class="text-center text-zinc-400 mb-16">High-quality systems used by developers worldwide</p>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-zinc-800 p-8 rounded-3xl card-hover">
-                    <h3 class="text-xl font-semibold">Modular Vehicle Storage System (MVSS)</h3>
-                    <p class="text-emerald-400 mt-2 mb-4">Advanced vehicle management for roleplay games</p>
-                    <a href="https://clearlydev.com/..." class="text-sm underline">View on Marketplace →</a>
-                </div>
-                <div class="bg-zinc-800 p-8 rounded-3xl card-hover">
-                    <h3 class="text-xl font-semibold">Dynamic Nametag System</h3>
-                    <p class="text-emerald-400 mt-2 mb-4">Professional group tag & nametag system</p>
-                    <a href="https://clearlydev.com/..." class="text-sm underline">View on Marketplace →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Community -->
-    <section id="community" class="py-24 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-6">Join the Community</h2>
-            <p class="max-w-md mx-auto text-zinc-400 mb-12">Connect with thousands of players and developers</p>
-            
-            <div class="flex justify-center gap-8 flex-wrap">
-                <a href="https://www.roblox.com/groups/yourgroup" target="_blank" 
-                   class="bg-zinc-800 hover:bg-zinc-700 px-10 py-6 rounded-3xl flex flex-col items-center w-72 transition">
-                    <i class="fab fa-roblox text-5xl mb-4"></i>
-                    <span class="font-semibold text-xl">Roblox Group</span>
-                    <span class="text-emerald-400">Join Now</span>
-                </a>
-                <a href="https://discord.gg/yourinvite" target="_blank" 
-                   class="bg-zinc-800 hover:bg-zinc-700 px-10 py-6 rounded-3xl flex flex-col items-center w-72 transition">
-                    <i class="fab fa-discord text-5xl mb-4 text-indigo-400"></i>
-                    <span class="font-semibold text-xl">Discord Server</span>
-                    <span class="text-emerald-400">Chat & Updates</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="py-24">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold mb-8">About Kev Solutions</h2>
-            <p class="text-xl text-zinc-300 leading-relaxed">
-                Solo Roblox developer creating fun, original, and immersive experiences. 
-                Specializing in roleplay, simulation, and high-quality game systems. 
-                Passionate about building communities and pushing Roblox development forward.
-            </p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black py-12 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto px-6 text-center text-zinc-500 text-sm">
-            © 2026 Kev Solutions™ • All Rights Reserved<br>
-            Built for the Roblox community
-        </div>
+    <!-- More sections (shortened for home) + CTA to other pages -->
+    <footer class="bg-black py-12 border-t border-zinc-800 text-center text-zinc-500 text-sm">
+        © 2026 Kev Solutions™ • <a href="https://github.com/yourusername/kev-solutions-website" class="hover:text-white">GitHub</a>
     </footer>
 
-    <script>
-        // Simple Tailwind script already included via CDN
-    </script>
 </body>
 </html>
