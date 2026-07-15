@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+}
+.card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+}
